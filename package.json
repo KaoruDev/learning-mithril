@@ -1,0 +1,25 @@
+{
+  "name": "learning-mithril",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "mithril": "^0.2.3"
+  },
+  "devDependencies": {
+    "mithril": "^0.2.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaoruDev/learning-mithril.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaoruDev/learning-mithril/issues"
+  },
+  "homepage": "https://github.com/KaoruDev/learning-mithril#readme"
+}
