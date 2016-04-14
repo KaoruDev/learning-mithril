@@ -1,11 +1,7 @@
-var m = window.m;
+var m = require('mithril');
+var Task = require('./models/task-model');
 
 var todo = {
-  Task: function (data) {
-    this.description = m.prop(data.description);
-    this.done = m.prop(false);
-  },
-
   TaskList: Array,
 
   vm: {
@@ -14,7 +10,7 @@ var todo = {
       todo.vm.description = m.prop('');
       todo.vm.add = function () {
         if (todo.vm.description()) {
-          todo.vm.list.push(new todo.Task({ description: todo.vm.description() }));
+          todo.vm.list.push(new Task({ description: todo.vm.description() }));
           todo.vm.description('');
         }
       };
