@@ -3,12 +3,15 @@
 <head>
   <title>LearningMithril</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+  <div id="app">
+    <%= yield %>
+  </div>
 
+  <script src="http://cdn.jsdelivr.net/mithril/0.2.4/mithril.min.js"></script>
+   <%= javascript_include_tag 'application' %>
 </body>
 </html>
